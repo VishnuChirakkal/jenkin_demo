@@ -1,0 +1,17 @@
+1)sudo su 
+2)apt-get update
+3)apt-get upgrade
+4)apt-get install openjdk-11-jdk
+5)wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+  
+  wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+
+6)sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+7)apt-get update
+8)apt install jenkins
+9)sudo systemctl start jenkins
+10)sudo systemctl status jenkins
+11) cat /var/lib/jenkins/secrets/initialAdminPassword 
+    Running above command will give the passwrod --- 7bd91ff841c444e5941daa51eb461035
+    
+Jenkins URL - http://3.85.228.67:8080/
